@@ -9,6 +9,9 @@ include_directories( ${PKG_INCLUDE_DIRS} )
 add_executable( main.out src/main.cpp src/Random.cpp src/Random.hpp src/Chifoumi.cpp src/Chifoumi.hpp)
 target_link_libraries( main.out ${PKG_LIBRARIES} )
 
+add_executable(graph.out src/InterfaceGraphique.cpp src/Random.cpp src/Random.hpp src/Chifoumi.cpp src/Chifoumi.hpp)
+target_link_libraries( graph.out ${PKG_LIBRARIES} )
+
 # tests unitaires
 find_package( PkgConfig REQUIRED )
 pkg_check_modules( PKG REQUIRED cpputest )

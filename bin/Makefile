@@ -103,6 +103,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named graph.out
+
+# Build rule for target.
+graph.out: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 graph.out
+.PHONY : graph.out
+
+# fast build rule for target.
+graph.out/fast:
+	$(MAKE) -f CMakeFiles/graph.out.dir/build.make CMakeFiles/graph.out.dir/build
+.PHONY : graph.out/fast
+
+#=============================================================================
 # Target rules for targets named main.out
 
 # Build rule for target.
@@ -133,6 +146,7 @@ src/Chifoumi.o: src/Chifoumi.cpp.o
 
 # target to build an object file
 src/Chifoumi.cpp.o:
+	$(MAKE) -f CMakeFiles/graph.out.dir/build.make CMakeFiles/graph.out.dir/src/Chifoumi.cpp.o
 	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Chifoumi.cpp.o
 .PHONY : src/Chifoumi.cpp.o
 
@@ -141,6 +155,7 @@ src/Chifoumi.i: src/Chifoumi.cpp.i
 
 # target to preprocess a source file
 src/Chifoumi.cpp.i:
+	$(MAKE) -f CMakeFiles/graph.out.dir/build.make CMakeFiles/graph.out.dir/src/Chifoumi.cpp.i
 	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Chifoumi.cpp.i
 .PHONY : src/Chifoumi.cpp.i
 
@@ -149,14 +164,40 @@ src/Chifoumi.s: src/Chifoumi.cpp.s
 
 # target to generate assembly for a file
 src/Chifoumi.cpp.s:
+	$(MAKE) -f CMakeFiles/graph.out.dir/build.make CMakeFiles/graph.out.dir/src/Chifoumi.cpp.s
 	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Chifoumi.cpp.s
 .PHONY : src/Chifoumi.cpp.s
+
+src/InterfaceGraphique.o: src/InterfaceGraphique.cpp.o
+.PHONY : src/InterfaceGraphique.o
+
+# target to build an object file
+src/InterfaceGraphique.cpp.o:
+	$(MAKE) -f CMakeFiles/graph.out.dir/build.make CMakeFiles/graph.out.dir/src/InterfaceGraphique.cpp.o
+.PHONY : src/InterfaceGraphique.cpp.o
+
+src/InterfaceGraphique.i: src/InterfaceGraphique.cpp.i
+.PHONY : src/InterfaceGraphique.i
+
+# target to preprocess a source file
+src/InterfaceGraphique.cpp.i:
+	$(MAKE) -f CMakeFiles/graph.out.dir/build.make CMakeFiles/graph.out.dir/src/InterfaceGraphique.cpp.i
+.PHONY : src/InterfaceGraphique.cpp.i
+
+src/InterfaceGraphique.s: src/InterfaceGraphique.cpp.s
+.PHONY : src/InterfaceGraphique.s
+
+# target to generate assembly for a file
+src/InterfaceGraphique.cpp.s:
+	$(MAKE) -f CMakeFiles/graph.out.dir/build.make CMakeFiles/graph.out.dir/src/InterfaceGraphique.cpp.s
+.PHONY : src/InterfaceGraphique.cpp.s
 
 src/Random.o: src/Random.cpp.o
 .PHONY : src/Random.o
 
 # target to build an object file
 src/Random.cpp.o:
+	$(MAKE) -f CMakeFiles/graph.out.dir/build.make CMakeFiles/graph.out.dir/src/Random.cpp.o
 	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Random.cpp.o
 .PHONY : src/Random.cpp.o
 
@@ -165,6 +206,7 @@ src/Random.i: src/Random.cpp.i
 
 # target to preprocess a source file
 src/Random.cpp.i:
+	$(MAKE) -f CMakeFiles/graph.out.dir/build.make CMakeFiles/graph.out.dir/src/Random.cpp.i
 	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Random.cpp.i
 .PHONY : src/Random.cpp.i
 
@@ -173,6 +215,7 @@ src/Random.s: src/Random.cpp.s
 
 # target to generate assembly for a file
 src/Random.cpp.s:
+	$(MAKE) -f CMakeFiles/graph.out.dir/build.make CMakeFiles/graph.out.dir/src/Random.cpp.s
 	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Random.cpp.s
 .PHONY : src/Random.cpp.s
 
@@ -231,12 +274,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... graph.out"
 	@echo "... main.out"
 	@echo "... main_test.out"
 	@echo "... rebuild_cache"
 	@echo "... src/Chifoumi.o"
 	@echo "... src/Chifoumi.i"
 	@echo "... src/Chifoumi.s"
+	@echo "... src/InterfaceGraphique.o"
+	@echo "... src/InterfaceGraphique.i"
+	@echo "... src/InterfaceGraphique.s"
 	@echo "... src/Random.o"
 	@echo "... src/Random.i"
 	@echo "... src/Random.s"
