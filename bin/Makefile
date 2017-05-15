@@ -128,6 +128,54 @@ main_test.out/fast:
 	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/build
 .PHONY : main_test.out/fast
 
+src/Chifoumi.o: src/Chifoumi.cpp.o
+.PHONY : src/Chifoumi.o
+
+# target to build an object file
+src/Chifoumi.cpp.o:
+	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Chifoumi.cpp.o
+.PHONY : src/Chifoumi.cpp.o
+
+src/Chifoumi.i: src/Chifoumi.cpp.i
+.PHONY : src/Chifoumi.i
+
+# target to preprocess a source file
+src/Chifoumi.cpp.i:
+	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Chifoumi.cpp.i
+.PHONY : src/Chifoumi.cpp.i
+
+src/Chifoumi.s: src/Chifoumi.cpp.s
+.PHONY : src/Chifoumi.s
+
+# target to generate assembly for a file
+src/Chifoumi.cpp.s:
+	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Chifoumi.cpp.s
+.PHONY : src/Chifoumi.cpp.s
+
+src/Random.o: src/Random.cpp.o
+.PHONY : src/Random.o
+
+# target to build an object file
+src/Random.cpp.o:
+	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Random.cpp.o
+.PHONY : src/Random.cpp.o
+
+src/Random.i: src/Random.cpp.i
+.PHONY : src/Random.i
+
+# target to preprocess a source file
+src/Random.cpp.i:
+	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Random.cpp.i
+.PHONY : src/Random.cpp.i
+
+src/Random.s: src/Random.cpp.s
+.PHONY : src/Random.s
+
+# target to generate assembly for a file
+src/Random.cpp.s:
+	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/Random.cpp.s
+.PHONY : src/Random.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -186,6 +234,12 @@ help:
 	@echo "... main.out"
 	@echo "... main_test.out"
 	@echo "... rebuild_cache"
+	@echo "... src/Chifoumi.o"
+	@echo "... src/Chifoumi.i"
+	@echo "... src/Chifoumi.s"
+	@echo "... src/Random.o"
+	@echo "... src/Random.i"
+	@echo "... src/Random.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

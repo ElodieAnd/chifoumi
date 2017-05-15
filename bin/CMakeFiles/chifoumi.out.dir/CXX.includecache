@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/elodie/projetc++/chifoumi/src/Chifoumi.cpp
+Chifoumi.hpp
+/home/elodie/projetc++/chifoumi/src/Chifoumi.hpp
+iostream
+-
+
+/home/elodie/projetc++/chifoumi/src/Chifoumi.hpp
+Random.hpp
+/home/elodie/projetc++/chifoumi/src/Random.hpp
+iostream
+-
+
+/home/elodie/projetc++/chifoumi/src/Random.cpp
+Random.hpp
+/home/elodie/projetc++/chifoumi/src/Random.hpp
+iostream
+-
+
+/home/elodie/projetc++/chifoumi/src/Random.hpp
+random
+-
+iostream
+-
+

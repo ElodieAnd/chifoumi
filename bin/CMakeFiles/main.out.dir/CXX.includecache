@@ -6,7 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/home/elodie/projetc++/chifoumi/src/Chifoumi.cpp
+Chifoumi.hpp
+/home/elodie/projetc++/chifoumi/src/Chifoumi.hpp
+
+/home/elodie/projetc++/chifoumi/src/Chifoumi.hpp
+Random.hpp
+/home/elodie/projetc++/chifoumi/src/Random.hpp
+iostream
+-
+string
+-
+
+/home/elodie/projetc++/chifoumi/src/Random.hpp
+random
+-
+iostream
+-
+
 /home/elodie/projetc++/chifoumi/src/main.cpp
 iostream
 -
+string
+-
+Chifoumi.hpp
+/home/elodie/projetc++/chifoumi/src/Chifoumi.hpp
 
