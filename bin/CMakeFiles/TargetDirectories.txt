@@ -1,1 +1,2 @@
 /home/elodie/projetc++/chifoumi/bin/CMakeFiles/main.out.dir
+/home/elodie/projetc++/chifoumi/bin/CMakeFiles/main_test.out.dir

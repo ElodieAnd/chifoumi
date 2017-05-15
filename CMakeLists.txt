@@ -6,9 +6,13 @@ set( CMAKE_BUILD_TYPE Debug )
 find_package( PkgConfig REQUIRED )
 pkg_check_modules( PKG REQUIRED gtkmm-2.4 cpputest )
 include_directories( ${PKG_INCLUDE_DIRS} )
-
-
 add_executable( main.out src/main.cpp)
 target_link_libraries( main.out ${PKG_LIBRARIES} )
 
+# tests unitaires
+find_package( PkgConfig REQUIRED )
+pkg_check_modules( PKG REQUIRED cpputest )
+include_directories( ${PKG_INCLUDE_DIRS} )
+add_executable( main_test.out src/main_test.cpp )
+target_link_libraries( main_test.out ${PKG_LIBRARIES} )
 
